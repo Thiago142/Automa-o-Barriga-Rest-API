@@ -1,0 +1,62 @@
+Request method:	POST
+5Request URI:	https://barrigarest.wcaquino.me/signin
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
+				Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+)    "email": "thiago.teste@hotmail.com",
+    "senha": "testeQA"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.12.1 (Ubuntu)
+%Date: Tue, 21 Mar 2023 13:12:22 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 136
+Connection: keep-alive
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*ETag: W/"88-c7oaM79/i1vKjGn6RhIEnhspHpk"
+
+{
+    "id": 37097,
+    "nome": "Thiago",
+q    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck"
+}
+Request method:	POST
+5Request URI:	https://barrigarest.wcaquino.me/signin
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
+				Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+/    "email": "teste_apenas_email@hotmail.com",
+    "senha": null
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.12.1 (Ubuntu)
+%Date: Tue, 21 Mar 2023 13:12:23 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 45
+Connection: keep-alive
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*ETag: W/"2d-PyO5ELlCSH5+yn9punTDRwmBGJ4"
+
+{
+1    "error": "Problemas com o login do usuário"
+}
