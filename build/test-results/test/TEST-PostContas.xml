@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PostContas" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-21T19:18:55" hostname="W7LKV173" time="4.43">
+  <properties/>
+  <testcase name="Criação de conta que já existe" classname="PostContas" time="3.638"/>
+  <testcase name="Criação-de-conta" classname="PostContas" time="0.792"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/contas
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "teste-QA"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 21 Mar 2023 19:18:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 47
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"2f-Yp0yjTChK17tu8PRQa5WFY5+BH8"
+
+{
+    "error": "Já existe uma conta com esse nome!"
+}
+Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/contas
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "org.apache.commons.lang3.RandomStringUtils@15d114ce"
+}
+HTTP/1.1 201 Created
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 21 Mar 2023 19:18:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 109
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"6d-9xhp8bw18p3Q+B41KL7FVsOKy+o"
+
+{
+    "id": 1663188,
+    "nome": "org.apache.commons.lang3.RandomStringUtils@15d114ce",
+    "visivel": true,
+    "usuario_id": 37097
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

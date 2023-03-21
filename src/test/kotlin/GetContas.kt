@@ -26,11 +26,9 @@ class GetContas: Base() {
 
 
     @Test
-
     fun getcontasTest(){
         val response=getcontas()
-
-        assertAll("Buscando conta dos clientes",
+        assertAll("Buscando contas do cliente",
             { assertNotNull(response)},
             { assertEquals(200, response.statusCode)}
         )

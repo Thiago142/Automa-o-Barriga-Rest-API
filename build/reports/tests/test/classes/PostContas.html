@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class PostSignin</title>
+<title>Test results - Class PostContas</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class PostSignin</h1>
+<h1>Class PostContas</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; PostSignin</div>
+<a href="../packages/default-package.html">default-package</a> &gt; PostContas</div>
 <div id="summary">
 <table>
 <tr>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">4.492s</div>
+<div class="counter">4.430s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,14 +79,14 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Login com sucesso</td>
-<td class="success">registro_com_sucessoTest()</td>
-<td class="success">3.700s</td>
+<td class="success">Criação de conta que já existe</td>
+<td class="success">createPostContasExistenteTest()</td>
+<td class="success">3.638s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">Login sem informar a senha</td>
-<td class="success">registro_contendo_apenas_campo_emailTest()</td>
+<td class="success">Criação-de-conta</td>
+<td class="success">createPostContasTest()</td>
 <td class="success">0.792s</td>
 <td class="success">passed</td>
 </tr>
@@ -96,66 +96,65 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request method:	POST
-Request URI:	https://barrigarest.wcaquino.me/signin
+Request URI:	https://barrigarest.wcaquino.me/contas
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;email&quot;: &quot;thiago.teste@hotmail.com&quot;,
-    &quot;senha&quot;: &quot;testeQA&quot;
-}
-HTTP/1.1 200 OK
-Server: nginx/1.12.1 (Ubuntu)
-Date: Tue, 21 Mar 2023 13:12:22 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 136
-Connection: keep-alive
-X-Powered-By: Express
-Access-Control-Allow-Origin: *
-ETag: W/&quot;88-c7oaM79/i1vKjGn6RhIEnhspHpk&quot;
-
-{
-    &quot;id&quot;: 37097,
-    &quot;nome&quot;: &quot;Thiago&quot;,
-    &quot;token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck&quot;
-}
-Request method:	POST
-Request URI:	https://barrigarest.wcaquino.me/signin
-Proxy:			&lt;none&gt;
-Request params:	&lt;none&gt;
-Query params:	&lt;none&gt;
-Form params:	&lt;none&gt;
-Path params:	&lt;none&gt;
-Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		&lt;none&gt;
-Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;email&quot;: &quot;teste_apenas_email@hotmail.com&quot;,
-    &quot;senha&quot;: null
+    &quot;nome&quot;: &quot;teste-QA&quot;
 }
 HTTP/1.1 400 Bad Request
 Server: nginx/1.12.1 (Ubuntu)
-Date: Tue, 21 Mar 2023 13:12:23 GMT
+Date: Tue, 21 Mar 2023 19:18:58 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 45
+Content-Length: 47
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/&quot;2d-PyO5ELlCSH5+yn9punTDRwmBGJ4&quot;
+ETag: W/&quot;2f-Yp0yjTChK17tu8PRQa5WFY5+BH8&quot;
 
 {
-    &quot;error&quot;: &quot;Problemas com o login do usuário&quot;
+    &quot;error&quot;: &quot;Já existe uma conta com esse nome!&quot;
+}
+Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/contas
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;org.apache.commons.lang3.RandomStringUtils@15d114ce&quot;
+}
+HTTP/1.1 201 Created
+Server: nginx/1.12.1 (Ubuntu)
+Date: Tue, 21 Mar 2023 19:18:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 109
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/&quot;6d-9xhp8bw18p3Q+B41KL7FVsOKy+o&quot;
+
+{
+    &quot;id&quot;: 1663188,
+    &quot;nome&quot;: &quot;org.apache.commons.lang3.RandomStringUtils@15d114ce&quot;,
+    &quot;visivel&quot;: true,
+    &quot;usuario_id&quot;: 37097
 }
 </pre>
 </span>
@@ -168,7 +167,7 @@ ETag: W/&quot;2d-PyO5ELlCSH5+yn9punTDRwmBGJ4&quot;
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.2</a> at 21 de mar. de 2023 10:12:23</p>
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 21 de mar. de 2023 16:18:59</p>
 </div>
 </div>
 </body>

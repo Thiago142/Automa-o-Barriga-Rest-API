@@ -1,62 +1,61 @@
 Request method:	POST
-5Request URI:	https://barrigarest.wcaquino.me/signin
+5Request URI:	https://barrigarest.wcaquino.me/contas
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
 				Accept=*/*
 #				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-)    "email": "thiago.teste@hotmail.com",
-    "senha": "testeQA"
+    "nome": "teste-QA"
 }
-HTTP/1.1 200 OK
+HTTP/1.1 400 Bad Request
 Server: nginx/1.12.1 (Ubuntu)
-%Date: Tue, 21 Mar 2023 13:12:22 GMT
+%Date: Tue, 21 Mar 2023 19:18:58 GMT
 /Content-Type: application/json; charset=utf-8
-Content-Length: 136
+Content-Length: 47
 Connection: keep-alive
 X-Powered-By: Express
  Access-Control-Allow-Origin: *
-*ETag: W/"88-c7oaM79/i1vKjGn6RhIEnhspHpk"
+*ETag: W/"2f-Yp0yjTChK17tu8PRQa5WFY5+BH8"
 
 {
-    "id": 37097,
-    "nome": "Thiago",
-q    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck"
+3    "error": "Já existe uma conta com esse nome!"
 }
 Request method:	POST
-5Request URI:	https://barrigarest.wcaquino.me/signin
+5Request URI:	https://barrigarest.wcaquino.me/contas
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzIzNTF9.s73nMqg6mFhfPSiffv2J9hOl2v1UhcGZL5vIW1GZGLI
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
 				Accept=*/*
 #				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-/    "email": "teste_apenas_email@hotmail.com",
-    "senha": null
+B    "nome": "org.apache.commons.lang3.RandomStringUtils@15d114ce"
 }
-HTTP/1.1 400 Bad Request
+HTTP/1.1 201 Created
 Server: nginx/1.12.1 (Ubuntu)
-%Date: Tue, 21 Mar 2023 13:12:23 GMT
+%Date: Tue, 21 Mar 2023 19:18:59 GMT
 /Content-Type: application/json; charset=utf-8
-Content-Length: 45
+Content-Length: 109
 Connection: keep-alive
 X-Powered-By: Express
  Access-Control-Allow-Origin: *
-*ETag: W/"2d-PyO5ELlCSH5+yn9punTDRwmBGJ4"
+*ETag: W/"6d-9xhp8bw18p3Q+B41KL7FVsOKy+o"
 
 {
-1    "error": "Problemas com o login do usuário"
+    "id": 1663188,
+C    "nome": "org.apache.commons.lang3.RandomStringUtils@15d114ce",
+    "visivel": true,
+    "usuario_id": 37097
 }

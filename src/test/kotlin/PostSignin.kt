@@ -34,9 +34,9 @@ class PostSignin: Base() {
   @Tag("Registro-Com-Sucesso")
   @DisplayName("Login com sucesso")
   fun registro_com_sucessoTest(){
-
       val response = postSignin(registerUsersFactory.registro_com_sucesso())
       assertAll("Teste Login com sucesso",
+          { assertNotNull(response) },
           { assertEquals(200,response.statusCode) }
       )
   }
@@ -49,7 +49,7 @@ class PostSignin: Base() {
       assertAll("Teste Login sem informa a senha",
           { assertNotNull(response)},
           { assertEquals(400,response.statusCode)},
-
+          { assertEquals("Problemas com o login do usuário",response.jsonPath().getString("error"))}
 
       )
   }
