@@ -1,8 +1,8 @@
-Request method:	DELETE
-CRequest URI:	https://barrigarest.wcaquino.me/transacoes/?=1584256
+Request method:	POST
+6Request URI:	https://barrigarest.wcaquino.me/contas/
 Proxy:			<none>
 Request params:	<none>
-Query params:	=1584256
+Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
@@ -12,36 +12,47 @@
 Multiparts:		<none>
 Body:
 {
-    "conta_id": 1681918,
-    "usuario_id": 37097,
-     "descricao": "Movimento 1",
-    "envolvido": "solo",
-    "tipo": "REC",
-$    "data_transacao": "10/03/2023",
-$    "data_pagamento": "12/03/2023",
-    "valor": 50.0,
-    "status": false
+    "nome": "teste-QA"
 }
-HTTP/1.1 404 Not Found
+HTTP/1.1 400 Bad Request
 Server: nginx/1.12.1 (Ubuntu)
-%Date: Tue, 04 Apr 2023 20:42:16 GMT
-(Content-Type: text/html; charset=utf-8
-Transfer-Encoding: chunked
+%Date: Wed, 05 Apr 2023 20:56:23 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 47
 Connection: keep-alive
 X-Powered-By: Express
  Access-Control-Allow-Origin: *
--Content-Security-Policy: default-src 'self'
-!X-Content-Type-Options: nosniff
-Content-Encoding: gzip
+*ETag: W/"2f-Yp0yjTChK17tu8PRQa5WFY5+BH8"
 
-<html lang="en">
-	  <head>
-    <meta charset="utf-8"/>
-    <title>Error</title>
-
-  </head>
-	  <body>
-*    <pre>Cannot DELETE /transacoes/</pre>
-
-  </body>
-	</html>
+{
+3    "error": "Já existe uma conta com esse nome!"
+}
+Request method:	POST
+6Request URI:	https://barrigarest.wcaquino.me/contas/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+<    "nome": "org.apache.commons.lang3.RandomUtils@6b27b2d0"
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.12.1 (Ubuntu)
+%Date: Wed, 05 Apr 2023 20:56:25 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 47
+Connection: keep-alive
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*ETag: W/"2f-Yp0yjTChK17tu8PRQa5WFY5+BH8"
+
+{
+3    "error": "Já existe uma conta com esse nome!"
+}
