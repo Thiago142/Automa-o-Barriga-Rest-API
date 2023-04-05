@@ -8,7 +8,7 @@ class RegisterContasFactory {
         return registerContasPojo
     }
     fun registro_conta():RegisterContasPojo{
-        registerContasPojo.nome = RandomStringUtils().toString()
+        registerContasPojo.nome= RandomStringUtils().toString()
         return registerContasPojo
     }
 

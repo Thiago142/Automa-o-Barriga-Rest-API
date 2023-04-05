@@ -22,7 +22,7 @@ class PostContas: Base() {
               body(registerContasPojo)
               log().all()
           }When {
-              post("/contas")
+              post("/contas/")
           }Then {
               log().all()
 
