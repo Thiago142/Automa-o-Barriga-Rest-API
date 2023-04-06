@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - PostTransacaoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>PostTransacaoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; PostTransacaoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.288s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Transacao com sucesso</td>
+<td class="success">createPostTransacoesSucessTest()</td>
+<td class="success">3.181s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Transacao com Falha</td>
+<td class="success">createPostTransacoesUnsucessTest()</td>
+<td class="success">2.107s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/transacoes
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;conta_id&quot;: 1681918,
+    &quot;usuario_id&quot;: null,
+    &quot;descricao&quot;: &quot;Movimento 1&quot;,
+    &quot;envolvido&quot;: &quot;solo&quot;,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;10/03/2023&quot;,
+    &quot;data_pagamento&quot;: &quot;12/03/2023&quot;,
+    &quot;valor&quot;: 50.0,
+    &quot;status&quot;: true
+}
+HTTP/1.1 201 Created
+Server: nginx/1.12.1 (Ubuntu)
+Date: Thu, 06 Apr 2023 13:33:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 293
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/&quot;125-8bPmxEk/YPQeetmi69myU7AFGoc&quot;
+
+{
+    &quot;id&quot;: 1585960,
+    &quot;descricao&quot;: &quot;Movimento 1&quot;,
+    &quot;envolvido&quot;: &quot;solo&quot;,
+    &quot;observacao&quot;: null,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;2023-03-10T03:00:00.000Z&quot;,
+    &quot;data_pagamento&quot;: &quot;2023-03-12T03:00:00.000Z&quot;,
+    &quot;valor&quot;: &quot;50.00&quot;,
+    &quot;status&quot;: true,
+    &quot;conta_id&quot;: 1681918,
+    &quot;usuario_id&quot;: 37097,
+    &quot;transferencia_id&quot;: null,
+    &quot;parcelamento_id&quot;: null
+}
+Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/transacoes
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;conta_id&quot;: null,
+    &quot;usuario_id&quot;: null,
+    &quot;descricao&quot;: &quot;Movimento 1&quot;,
+    &quot;envolvido&quot;: &quot;solo&quot;,
+    &quot;tipo&quot;: &quot;REC&quot;,
+    &quot;data_transacao&quot;: &quot;10/03/2023&quot;,
+    &quot;data_pagamento&quot;: &quot;12/03/2023&quot;,
+    &quot;valor&quot;: 50.0,
+    &quot;status&quot;: true
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.12.1 (Ubuntu)
+Date: Thu, 06 Apr 2023 13:33:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 65
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/&quot;41-HUuZ927kkZRT5Oxnj9AguwkX7qc&quot;
+
+[
+    {
+        &quot;param&quot;: &quot;conta_id&quot;,
+        &quot;msg&quot;: &quot;Conta é obrigatório&quot;,
+        &quot;value&quot;: null
+    }
+]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 6 de abr. de 2023 10:33:59</p>
+</div>
+</div>
+</body>
+</html>

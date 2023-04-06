@@ -12,13 +12,13 @@ import kotlin.test.assertNotNull
 
 class DeleteTransacoesTest {
     private val deletarTransacoes= DeletarTransacoes()
-    private val registerTransacoesFactorytransacoesFactory= RegisterTransacoesFactory()
+    private val registerTransacoesFactory= RegisterTransacoesFactory()
     private val validate = DeletarTransacoesValidade()
     @Test
     @Tag("Deletar-Transacao-Com-Sucesso")
     @DisplayName("Deletar-Transacao-Com-Sucesso")
     fun deleteSuccesTest(){
-        var response=deletarTransacoes.deletarTransacoes(1584256,registerTransacoesFactorytransacoesFactory.deleteTransacoesSucess())
+        var response=deletarTransacoes.deletarTransacoes(1584256,registerTransacoesFactory.deleteTransacoesSucess())
         validate.deleteSuccesTestValidate(response)
     }
 
@@ -26,7 +26,7 @@ class DeleteTransacoesTest {
     @Tag("Deletar-Transacao-Com-Falha")
     @DisplayName("Deletar-Transacao-Com-Falha")
     fun deleteUnsuccesTest(){
-        var response= deletarTransacoes.deletarTransacoes(1584256,registerTransacoesFactorytransacoesFactory.deleteTransacoeUnsucess())
+        var response= deletarTransacoes.deletarTransacoes(1584256,registerTransacoesFactory.deleteTransacoeUnsucess())
         validate.deleteUnsuccesTestValidate(response)
 
     }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.PostTransacaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-06T13:33:53" hostname="W7LKV173" time="5.289">
+  <properties/>
+  <testcase name="Transacao com sucesso" classname="tests.PostTransacaoTest" time="3.181"/>
+  <testcase name="Transacao com Falha" classname="tests.PostTransacaoTest" time="2.107"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/transacoes
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "conta_id": 1681918,
+    "usuario_id": null,
+    "descricao": "Movimento 1",
+    "envolvido": "solo",
+    "tipo": "REC",
+    "data_transacao": "10/03/2023",
+    "data_pagamento": "12/03/2023",
+    "valor": 50.0,
+    "status": true
+}
+HTTP/1.1 201 Created
+Server: nginx/1.12.1 (Ubuntu)
+Date: Thu, 06 Apr 2023 13:33:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 293
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"125-8bPmxEk/YPQeetmi69myU7AFGoc"
+
+{
+    "id": 1585960,
+    "descricao": "Movimento 1",
+    "envolvido": "solo",
+    "observacao": null,
+    "tipo": "REC",
+    "data_transacao": "2023-03-10T03:00:00.000Z",
+    "data_pagamento": "2023-03-12T03:00:00.000Z",
+    "valor": "50.00",
+    "status": true,
+    "conta_id": 1681918,
+    "usuario_id": 37097,
+    "transferencia_id": null,
+    "parcelamento_id": null
+}
+Request method:	POST
+Request URI:	https://barrigarest.wcaquino.me/transacoes
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MzcwOTd9.WVkzd1dMMJ7dCG4ZMHcwM3v1YvR3HOPKcaT4_xRhnck
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "conta_id": null,
+    "usuario_id": null,
+    "descricao": "Movimento 1",
+    "envolvido": "solo",
+    "tipo": "REC",
+    "data_transacao": "10/03/2023",
+    "data_pagamento": "12/03/2023",
+    "valor": 50.0,
+    "status": true
+}
+HTTP/1.1 400 Bad Request
+Server: nginx/1.12.1 (Ubuntu)
+Date: Thu, 06 Apr 2023 13:33:58 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 65
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"41-HUuZ927kkZRT5Oxnj9AguwkX7qc"
+
+[
+    {
+        "param": "conta_id",
+        "msg": "Conta é obrigatório",
+        "value": null
+    }
+]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
